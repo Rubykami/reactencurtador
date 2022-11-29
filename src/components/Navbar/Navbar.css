@@ -1,0 +1,55 @@
+nav {
+    font-size: 8rem;
+    margin-top: 1rem;
+    position: absolute;
+    margin-left: 44rem;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.Navbar {
+    display: flex;
+    gap: 4rem;
+    margin: auto;
+}
+
+
+.Welcome {
+    color: white;
+    margin: auto;
+    position: absolute;
+    cursor:default;
+
+}
+
+.logout {
+    font-family: 'Signika Negative', sans-serif;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.logout:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.teladelogin:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.form {
+    cursor: pointer;
+    color: white;
+}
+
+.form:hover {
+    border-bottom: 1px solid white;
+}
+
+.teladelogin {
+    color: white;
+    margin-left: 27rem;
+}
+

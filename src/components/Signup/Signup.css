@@ -1,0 +1,155 @@
+.signup {
+    font-size: 10rem;
+}
+
+.signup fieldset {
+    width: 70rem;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    gap: 5rem;
+}
+
+.introd {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup fieldset div {
+    margin: auto;
+    font-size: 5rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.signup fieldset div input {
+    border: none;
+}
+
+.preencherdados {
+    font-size: 3rem;
+    margin: auto;
+    font-family: 'Signika Negative', sans-serif;
+
+}
+.criesuaconta {
+    font-size: 6rem;
+    font-family: 'Signika Negative', sans-serif;
+    color: darkred;
+}
+
+.mdemail {
+    border: 1px solid black;
+}
+
+.divemail {
+    padding: 2rem;
+    border-bottom: 2px solid darkred;
+}
+
+.inputemail {
+    outline: none;
+    font-family: 'Chivo';
+    
+}
+
+
+.divnome {
+    border-bottom: 2px solid darkred;
+    padding: 2rem;
+}
+
+.divsenha {
+    border-bottom: 2px solid darkred;
+    padding: 2rem;
+}
+
+.divconfsenha {
+    border-bottom: 2px solid darkred;
+    padding: 2rem;
+}
+
+.inputnome {
+    outline: none;
+    font-family: 'Chivo';
+}
+
+.inputsenha {
+    outline: none;
+    font-family: 'Chivo';
+}
+
+.inputconfsenha {
+    outline: none;
+    font-family: 'Chivo';
+}
+
+.cadastrarcontabtn {
+    padding: 2rem;
+    width: 25rem;
+    margin: auto;
+    border-radius: 5rem 5rem 5rem 5rem;
+    border: 1px solid darkred;
+    background-image: linear-gradient(to right, #9b111e, coral);
+    color: white;
+    cursor: pointer;
+}
+
+.mostrarsenha {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mostrarsenha label {
+    font-family: 'Chivo';
+    margin-right: 27rem;
+    margin-top: 2rem;
+}
+
+.mostrarsenha input {
+    width: 2rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-left: 1rem;
+
+}
+
+.sucessSignup {
+    margin: auto;
+    font-size: 4rem;
+    background-color: lightgreen;
+    color: darkgreen;
+    padding: 1rem;
+    border-radius: 4rem 4rem 4rem 4rem;
+}
+
+.nameerror {
+    position: absolute;
+    color: darkred;
+    margin-top: 33rem;
+    margin-left: 5rem;
+}
+
+.emailerror {
+    position: absolute;
+    color: darkred;
+    margin-top: 46rem;
+    margin-left: 5rem;
+
+}
+
+.passworderror {
+    position: absolute;
+    color: darkred;
+    margin-top: 58rem;
+    margin-left: 5rem;
+}
+
+.confpassworderror {
+    position: absolute;
+    color: darkred;
+    margin-top: 71rem;
+    margin-left: 5rem;
+}

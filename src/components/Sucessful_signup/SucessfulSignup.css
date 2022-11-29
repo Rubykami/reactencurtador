@@ -1,0 +1,32 @@
+.signupdiv {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.signupdiv h1 {
+    font-size: 5rem;
+    margin-left: 45rem;
+    margin-top: 10rem;
+    font-family: 'Chivo';
+    color: white;
+}
+
+.signupdiv h2 {
+    font-size: 5rem;
+    margin-left: 15rem;
+    font-family: 'Chivo';
+    color: white;
+}
+
+.signupdiv a {
+    font-size: 5rem;
+    background-image: linear-gradient(to right, #9b111e, coral);
+    border-radius: 4rem 4rem 4rem 4rem;
+    color: white;
+    width: 30rem;
+    margin-left: 60rem;
+    padding: 1.2rem;
+    border: 1px solid white;
+
+}

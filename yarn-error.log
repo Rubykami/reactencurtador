@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Bruno\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add frame-motion
+  C:\Program Files\nodejs\node.exe C:\Users\Bruno\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add hookform
 
 PATH: 
   C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\Bruno\AppData\Local\Programs\Strawberry\c\bin;C:\Users\Bruno\AppData\Local\Programs\Strawberry\perl\site\bin;C:\Users\Bruno\AppData\Local\Programs\Strawberry\perl\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\Calibre2\;C:\Program Files\nodejs\;C:\Program Files\dart-sass;C:\Users\Bruno\AppData\Local\Programs\mongosh;C:\Program Files (x86)\IncrediBuild;C:\Program Files (x86)\dotnet\;C:\Ruby31-x64\bin;C:\Users\Bruno\AppData\Local\activestate\cache\bin;C:\Users\Bruno\AppData\Local\ActiveState\StateTool\release;C:\Users\Bruno\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Bruno\AppData\Local\Programs\Python\Python310\;C:\Users\Bruno\AppData\Local\Programs\Python\Launcher\;C:\Users\Bruno\AppData\Local\Microsoft\WindowsApps;C:\Users\Bruno\.dotnet\tools;C:\Users\Bruno\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\Bruno\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Bruno\AppData\Local\gitkraken\bin;C:\Users\Bruno\AppData\Roaming\npm;C:\Program Files\heroku\bin;C:\Users\Bruno\AppData\Local\Programs\mongosh\;C:\Program Files\MongoDB\Server\5.0\bin;E:\flutter\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Cmder\vendor\bin;C:\Cmder\bin;C:\Cmder
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/frame-motion: Not found
+  Error: https://registry.yarnpkg.com/hookform: Not found
       at Request.params.callback [as _callback] (C:\Users\Bruno\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
       at Request.self.callback (C:\Users\Bruno\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
       at Request.emit (node:events:520:28)
@@ -36,13 +36,20 @@ npm manifest:
       "@testing-library/react": "^13.0.0",
       "@testing-library/user-event": "^13.2.1",
       "axios": "^1.1.3",
+      "framer": "^2.2.1",
+      "framer-motion": "^7.6.4",
+      "history": "^5.3.0",
+      "hostabee-profile-picture": "Hostabee/hostabee-profile-picture",
+      "js-cookie": "^3.0.1",
       "react": "^18.2.0",
       "react-dom": "^18.2.0",
       "react-hook-form": "^7.39.1",
       "react-icons": "^4.6.0",
+      "react-router-dom": "^6.4.3",
       "react-scripts": "5.0.1",
       "use-effect": "^0.0.1",
-      "web-vitals": "^2.1.0"
+      "web-vitals": "^2.1.0",
+      "yup": "^0.32.11"
     },
     "scripts": {
       "start": "react-scripts start",
@@ -1116,6 +1123,13 @@ Lockfile:
     dependencies:
       regenerator-runtime "^0.13.10"
   
+  "@babel/runtime@^7.15.4", "@babel/runtime@^7.7.6":
+    version "7.20.1"
+    resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.1.tgz#1148bb33ab252b165a06698fde7576092a78b4a9"
+    integrity sha512-mrzLkl6U9YLF8qpqI7TB82PESyEGjm/0Ly91jG575eVxMMlb8fYfOXFZIJ8XfLrJZQbm7dlKry2bJmXBUEkdFg==
+    dependencies:
+      regenerator-runtime "^0.13.10"
+  
   "@babel/template@^7.18.10", "@babel/template@^7.3.3":
     version "7.18.10"
     resolved "https://registry.npmjs.org/@babel/template/-/template-7.18.10.tgz"
@@ -1265,6 +1279,18 @@ Lockfile:
     version "2.0.2"
     resolved "https://registry.npmjs.org/@csstools/selector-specificity/-/selector-specificity-2.0.2.tgz"
     integrity sha512-IkpVW/ehM1hWKln4fCA3NzJU8KwD+kIOvPZA4cqxoJHtE21CCzjyp+Kxbu0i5I4tBNOlXPL9mjwnWlL0VEG4Fg==
+  
+  "@emotion/is-prop-valid@^0.8.2":
+    version "0.8.8"
+    resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz#db28b1c4368a259b60a97311d6a952d4fd01ac1a"
+    integrity sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==
+    dependencies:
+      "@emotion/memoize" "0.7.4"
+  
+  "@emotion/memoize@0.7.4":
+    version "0.7.4"
+    resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.4.tgz#19bf0f5af19149111c40d98bb0cf82119f5d9eeb"
+    integrity sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==
   
   "@eslint/eslintrc@^1.3.3":
     version "1.3.3"
@@ -1600,10 +1626,68 @@ Lockfile:
       "@jridgewell/resolve-uri" "3.1.0"
       "@jridgewell/sourcemap-codec" "1.4.14"
   
+  "@juggle/resize-observer@^3.3.1":
+    version "3.4.0"
+    resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.4.0.tgz#08d6c5e20cf7e4cc02fd181c4b0c225cd31dbb60"
+    integrity sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==
+  
   "@leichtgewicht/ip-codec@^2.0.1":
     version "2.0.4"
     resolved "https://registry.npmjs.org/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz"
     integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
+  
+  "@motionone/animation@^10.13.1":
+    version "10.14.0"
+    resolved "https://registry.yarnpkg.com/@motionone/animation/-/animation-10.14.0.tgz#2f2a3517183bb58d82e389aac777fe0850079de6"
+    integrity sha512-h+1sdyBP8vbxEBW5gPFDnj+m2DCqdlAuf2g6Iafb1lcMnqjsRXWlPw1AXgvUMXmreyhqmPbJqoNfIKdytampRQ==
+    dependencies:
+      "@motionone/easing" "^10.14.0"
+      "@motionone/types" "^10.14.0"
+      "@motionone/utils" "^10.14.0"
+      tslib "^2.3.1"
+  
+  "@motionone/dom@10.13.1":
+    version "10.13.1"
+    resolved "https://registry.yarnpkg.com/@motionone/dom/-/dom-10.13.1.tgz#fc29ea5d12538f21b211b3168e502cfc07a24882"
+    integrity sha512-zjfX+AGMIt/fIqd/SL1Lj93S6AiJsEA3oc5M9VkUr+Gz+juRmYN1vfvZd6MvEkSqEjwPQgcjN7rGZHrDB9APfQ==
+    dependencies:
+      "@motionone/animation" "^10.13.1"
+      "@motionone/generators" "^10.13.1"
+      "@motionone/types" "^10.13.0"
+      "@motionone/utils" "^10.13.1"
+      hey-listen "^1.0.8"
+      tslib "^2.3.1"
+  
+  "@motionone/easing@^10.14.0":
+    version "10.14.0"
+    resolved "https://registry.yarnpkg.com/@motionone/easing/-/easing-10.14.0.tgz#d8154b7f71491414f3cdee23bd3838d763fffd00"
+    integrity sha512-2vUBdH9uWTlRbuErhcsMmt1jvMTTqvGmn9fHq8FleFDXBlHFs5jZzHJT9iw+4kR1h6a4SZQuCf72b9ji92qNYA==
+    dependencies:
+      "@motionone/utils" "^10.14.0"
+      tslib "^2.3.1"
+  
+  "@motionone/generators@^10.13.1":
+    version "10.14.0"
+    resolved "https://registry.yarnpkg.com/@motionone/generators/-/generators-10.14.0.tgz#e05d9dd56da78a4b92db99185848a0f3db62242d"
+    integrity sha512-6kRHezoFfIjFN7pPpaxmkdZXD36tQNcyJe3nwVqwJ+ZfC0e3rFmszR8kp9DEVFs9QL/akWjuGPSLBI1tvz+Vjg==
+    dependencies:
+      "@motionone/types" "^10.14.0"
+      "@motionone/utils" "^10.14.0"
+      tslib "^2.3.1"
+  
+  "@motionone/types@^10.13.0", "@motionone/types@^10.14.0":
+    version "10.14.0"
+    resolved "https://registry.yarnpkg.com/@motionone/types/-/types-10.14.0.tgz#148c34f3270b175397e49c3058b33fab405c21e3"
+    integrity sha512-3bNWyYBHtVd27KncnJLhksMFQ5o2MSdk1cA/IZqsHtA9DnRM1SYgN01CTcJ8Iw8pCXF5Ocp34tyAjY7WRpOJJQ==
+  
+  "@motionone/utils@^10.13.1", "@motionone/utils@^10.14.0":
+    version "10.14.0"
+    resolved "https://registry.yarnpkg.com/@motionone/utils/-/utils-10.14.0.tgz#a19a3464ed35b08506747b062d035c7bc9bbe708"
+    integrity sha512-sLWBLPzRqkxmOTRzSaD3LFQXCPHvDzyHJ1a3VP9PRzBxyVd2pv51/gMOsdAcxQ9n+MIeGJnxzXBYplUHKj4jkw==
+    dependencies:
+      "@motionone/types" "^10.14.0"
+      hey-listen "^1.0.8"
+      tslib "^2.3.1"
   
   "@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1":
     version "5.1.1-v1"
@@ -1647,6 +1731,11 @@ Lockfile:
       loader-utils "^2.0.0"
       schema-utils "^3.0.0"
       source-map "^0.7.3"
+  
+  "@remix-run/router@1.0.3":
+    version "1.0.3"
+    resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.0.3.tgz#953b88c20ea00d0eddaffdc1b115c08474aa295d"
+    integrity sha512-ceuyTSs7PZ/tQqi19YZNBc5X7kj1f8p+4DIyrcIYFY9h+hd1OKm4RqtiWldR9eGEvIiJfsqwM4BsuCtRIuEw6Q==
   
   "@rollup/plugin-babel@^5.2.0":
     version "5.3.1"
@@ -2050,6 +2139,11 @@ Lockfile:
     version "0.0.29"
     resolved "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
     integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
+  
+  "@types/lodash@^4.14.175":
+    version "4.14.190"
+    resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.190.tgz#d8e99647af141c63902d0ca53cf2b34d2df33545"
+    integrity sha512-5iJ3FBJBvQHQ8sFhEhJfjUP+G+LalhavTkYyrAYqz5MEJG+erSv0k9KJLb6q7++17Lafk1scaTIFXcMJlwK8Mw==
   
   "@types/mime@*":
     version "3.0.1"
@@ -4279,6 +4373,11 @@ Lockfile:
     resolved "https://registry.npmjs.org/etag/-/etag-1.8.1.tgz"
     integrity sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==
   
+  eventemitter3@^3.1.0:
+    version "3.1.2"
+    resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
+    integrity sha512-tvtQIeLVHjDkJYnzf2dgVMxfuSGJeM/7UCG17TT4EumTfNtF+0nebF/4zWOIkCreAbtNqhGEboB6BWrwqNaw4Q==
+  
   eventemitter3@^4.0.0:
     version "4.0.7"
     resolved "https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz"
@@ -4511,6 +4610,11 @@ Lockfile:
     resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.2.tgz"
     integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
   
+  fontfaceobserver@^2.1.0:
+    version "2.3.0"
+    resolved "https://registry.yarnpkg.com/fontfaceobserver/-/fontfaceobserver-2.3.0.tgz#5fb392116e75d5024b7ec8e4f2ce92106d1488c8"
+    integrity sha512-6FPvD/IVyT4ZlNe7Wcn5Fb/4ChigpucKYSvD6a+0iMoLn2inpo711eyIcKjmDtE5XNcgAkSH9uN/nfAeZzHEfg==
+  
   for-each@^0.3.3:
     version "0.3.3"
     resolved "https://registry.npmjs.org/for-each/-/for-each-0.3.3.tgz"
@@ -4564,6 +4668,38 @@ Lockfile:
     version "4.2.0"
     resolved "https://registry.npmjs.org/fraction.js/-/fraction.js-4.2.0.tgz"
     integrity sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==
+  
+  framer-motion@^7.6.4:
+    version "7.6.4"
+    resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-7.6.4.tgz#e396b36f68a14e14cc95b01210feac8cd5d2824d"
+    integrity sha512-Ac3Bl9M45fS8A0ibOUnYMSCfjaCrFfWT0uh0/MZVm/DGWcr5IsRRinWRiVGABA9RGJgn4THehqcn235JVQkucQ==
+    dependencies:
+      "@motionone/dom" "10.13.1"
+      framesync "6.1.2"
+      hey-listen "^1.0.8"
+      popmotion "11.0.5"
+      style-value-types "5.1.2"
+      tslib "2.4.0"
+    optionalDependencies:
+      "@emotion/is-prop-valid" "^0.8.2"
+  
+  framer@^2.2.1:
+    version "2.2.1"
+    resolved "https://registry.yarnpkg.com/framer/-/framer-2.2.1.tgz#29f9e898448d5feab14f77a88cbc23344ed8afd7"
+    integrity sha512-X8adaBg2ARufBUlNPXyICjco2lYNTfHUXc8Nx1N3/KZUCKlulgS0GkZjXH9rOJ4f9XcNwSVzXN9t1GNqTY9JDQ==
+    dependencies:
+      "@juggle/resize-observer" "^3.3.1"
+      eventemitter3 "^3.1.0"
+      fontfaceobserver "^2.1.0"
+      hoist-non-react-statics "^3.3.2"
+      hsluv "^0.0.3"
+  
+  framesync@6.1.2:
+    version "6.1.2"
+    resolved "https://registry.yarnpkg.com/framesync/-/framesync-6.1.2.tgz#755eff2fb5b8f3b4d2b266dd18121b300aefea27"
+    integrity sha512-jBTqhX6KaQVDyus8muwZbBeGGP0XgujBRbQ7gM7BRdS3CadCZIHiawyzYLnafYcvZIh5j8WE7cxZKFn7dXhu9g==
+    dependencies:
+      tslib "2.4.0"
   
   fresh@0.5.2:
     version "0.5.2"
@@ -4810,10 +4946,33 @@ Lockfile:
     resolved "https://registry.npmjs.org/he/-/he-1.2.0.tgz"
     integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
   
+  hey-listen@^1.0.8:
+    version "1.0.8"
+    resolved "https://registry.yarnpkg.com/hey-listen/-/hey-listen-1.0.8.tgz#8e59561ff724908de1aa924ed6ecc84a56a9aa68"
+    integrity sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==
+  
+  history@^5.3.0:
+    version "5.3.0"
+    resolved "https://registry.yarnpkg.com/history/-/history-5.3.0.tgz#1548abaa245ba47992f063a0783db91ef201c73b"
+    integrity sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==
+    dependencies:
+      "@babel/runtime" "^7.7.6"
+  
+  hoist-non-react-statics@^3.3.2:
+    version "3.3.2"
+    resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
+    integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
+    dependencies:
+      react-is "^16.7.0"
+  
   hoopy@^0.1.4:
     version "0.1.4"
     resolved "https://registry.npmjs.org/hoopy/-/hoopy-0.1.4.tgz"
     integrity sha512-HRcs+2mr52W0K+x8RzcLzuPPmVIKMSv97RGHy0Ea9y/mpcaK+xTrjICA04KAHi4GRzxliNqNJEFYWHghy3rSfQ==
+  
+  hostabee-profile-picture@Hostabee/hostabee-profile-picture:
+    version "1.0.1"
+    resolved "https://codeload.github.com/Hostabee/hostabee-profile-picture/tar.gz/97474ad1c1b107c299d112a8494f0692e120d732"
   
   hpack.js@^2.1.6:
     version "2.1.6"
@@ -4824,6 +4983,11 @@ Lockfile:
       obuf "^1.0.0"
       readable-stream "^2.0.1"
       wbuf "^1.1.0"
+  
+  hsluv@^0.0.3:
+    version "0.0.3"
+    resolved "https://registry.yarnpkg.com/hsluv/-/hsluv-0.0.3.tgz#829107dafb4a9f8b52a1809ed02e091eade6754c"
+    integrity sha512-08iL2VyCRbkQKBySkSh6m8zMUa3sADAxGVWs3Z1aPcUkTJeK0ETG4Fc27tEmQBGUAXZjIsXOZqBvacuVNSC/fQ==
   
   html-encoding-sniffer@^2.0.1:
     version "2.0.1"
@@ -5879,6 +6043,11 @@ Lockfile:
       import-local "^3.0.2"
       jest-cli "^27.5.1"
   
+  js-cookie@^3.0.1:
+    version "3.0.1"
+    resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-3.0.1.tgz#9e39b4c6c2f56563708d7d31f6f5f21873a92414"
+    integrity sha512-+0rgsUXZu4ncpPxRL+lNEptWMOWl9etvPHc/koSRp6MPwpRYAhmk0dUG00J4bxVV3r9uUzfo24wW0knS07SKSw==
+  
   js-sdsl@^4.1.4:
     version "4.1.5"
     resolved "https://registry.npmjs.org/js-sdsl/-/js-sdsl-4.1.5.tgz"
@@ -6105,6 +6274,11 @@ Lockfile:
     dependencies:
       p-locate "^5.0.0"
   
+  lodash-es@^4.17.21:
+    version "4.17.21"
+    resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+    integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
+  
   lodash.debounce@^4.0.8:
     version "4.0.8"
     resolved "https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz"
@@ -6319,6 +6493,11 @@ Lockfile:
     dependencies:
       dns-packet "^5.2.2"
       thunky "^1.0.2"
+  
+  nanoclone@^0.2.1:
+    version "0.2.1"
+    resolved "https://registry.yarnpkg.com/nanoclone/-/nanoclone-0.2.1.tgz#dd4090f8f1a110d26bb32c49ed2f5b9235209ed4"
+    integrity sha512-wynEP02LmIbLpcYw8uBKpcfF6dmg2vcpKqxeH5UcoKEYdExslsdUA4ugFauuaeYdTB76ez6gJW8XAZ6CgkXYxA==
   
   nanoid@^3.3.4:
     version "3.3.4"
@@ -6720,6 +6899,16 @@ Lockfile:
     integrity sha512-nDywThFk1i4BQK4twPQ6TA4RT8bDY96yeuCVBWL3ePARCiEKDRSrNGbFIgUJpLp+XeIR65v8ra7WuJOFUBtkMA==
     dependencies:
       find-up "^3.0.0"
+  
+  popmotion@11.0.5:
+    version "11.0.5"
+    resolved "https://registry.yarnpkg.com/popmotion/-/popmotion-11.0.5.tgz#8e3e014421a0ffa30ecd722564fd2558954e1f7d"
+    integrity sha512-la8gPM1WYeFznb/JqF4GiTkRRPZsfaj2+kCxqQgr2MJylMmIKUwBfWW8Wa5fml/8gmtlD5yI01MP1QCZPWmppA==
+    dependencies:
+      framesync "6.1.2"
+      hey-listen "^1.0.8"
+      style-value-types "5.1.2"
+      tslib "2.4.0"
   
   postcss-attribute-case-insensitive@^5.0.2:
     version "5.0.2"
@@ -7353,6 +7542,11 @@ Lockfile:
       object-assign "^4.1.1"
       react-is "^16.13.1"
   
+  property-expr@^2.0.4:
+    version "2.0.5"
+    resolved "https://registry.yarnpkg.com/property-expr/-/property-expr-2.0.5.tgz#278bdb15308ae16af3e3b9640024524f4dc02cb4"
+    integrity sha512-IJUkICM5dP5znhCckHSv30Q4b5/JA5enCtkRHYaOVOAocnH/1BQEYTC5NMfT3AVl/iXKdr3aqQbQn9DxyWknwA==
+  
   proxy-addr@~2.0.7:
     version "2.0.7"
     resolved "https://registry.npmjs.org/proxy-addr/-/proxy-addr-2.0.7.tgz"
@@ -7497,7 +7691,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.6.0.tgz#f83eda179af5d02c047449a20b702c858653d397"
     integrity sha512-rR/L9m9340yO8yv1QT1QurxWQvWpbNHqVX0fzMln2HEb9TEIrQRGsqiNFQfiv9/JEUbyHmHPlNTB2LWm2Ttz0g==
   
-  react-is@^16.13.1:
+  react-is@^16.13.1, react-is@^16.7.0:
     version "16.13.1"
     resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
     integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -7516,6 +7710,21 @@ Lockfile:
     version "0.11.0"
     resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.11.0.tgz"
     integrity sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==
+  
+  react-router-dom@^6.4.3:
+    version "6.4.3"
+    resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.4.3.tgz#70093b5f65f85f1df9e5d4182eb7ff3a08299275"
+    integrity sha512-MiaYQU8CwVCaOfJdYvt84KQNjT78VF0TJrA17SIQgNHRvLnXDJO6qsFqq8F/zzB1BWZjCFIrQpu4QxcshitziQ==
+    dependencies:
+      "@remix-run/router" "1.0.3"
+      react-router "6.4.3"
+  
+  react-router@6.4.3:
+    version "6.4.3"
+    resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.4.3.tgz#9ed3ee4d6e95889e9b075a5d63e29acc7def0d49"
+    integrity sha512-BT6DoGn6aV1FVP5yfODMOiieakp3z46P1Fk0RNzJMACzE7C339sFuHebfvWtnB4pzBvXXkHP2vscJzWRuUjTtA==
+    dependencies:
+      "@remix-run/router" "1.0.3"
   
   react-scripts@5.0.1:
     version "5.0.1"
@@ -8298,6 +8507,14 @@ Lockfile:
     resolved "https://registry.npmjs.org/style-loader/-/style-loader-3.3.1.tgz"
     integrity sha512-GPcQ+LDJbrcxHORTRes6Jy2sfvK2kS6hpSfI/fXhPt+spVzxF6LJ1dHLN9zIGmVaaP044YKaIatFaufENRiDoQ==
   
+  style-value-types@5.1.2:
+    version "5.1.2"
+    resolved "https://registry.yarnpkg.com/style-value-types/-/style-value-types-5.1.2.tgz#6be66b237bd546048a764883528072ed95713b62"
+    integrity sha512-Vs9fNreYF9j6W2VvuDTP7kepALi7sk0xtk2Tu8Yxi9UoajJdEVpNpCov0HsLTqXvNGKX+Uv09pkozVITi1jf3Q==
+    dependencies:
+      hey-listen "^1.0.8"
+      tslib "2.4.0"
+  
   stylehacks@^5.1.1:
     version "5.1.1"
     resolved "https://registry.npmjs.org/stylehacks/-/stylehacks-5.1.1.tgz"
@@ -8511,6 +8728,11 @@ Lockfile:
     resolved "https://registry.npmjs.org/toidentifier/-/toidentifier-1.0.1.tgz"
     integrity sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==
   
+  toposort@^2.0.2:
+    version "2.0.2"
+    resolved "https://registry.yarnpkg.com/toposort/-/toposort-2.0.2.tgz#ae21768175d1559d48bef35420b2f4962f09c330"
+    integrity sha512-0a5EOkAUp8D4moMi2W8ZF8jcga7BgZd91O/yabJCFY8az+XSzeGyTKs0Aoo897iV1Nj6guFq8orWDS96z91oGg==
+  
   tough-cookie@^4.0.0:
     version "4.1.2"
     resolved "https://registry.npmjs.org/tough-cookie/-/tough-cookie-4.1.2.tgz"
@@ -8550,15 +8772,20 @@ Lockfile:
       minimist "^1.2.6"
       strip-bom "^3.0.0"
   
+  tslib@2.4.0, tslib@^2.0.3:
+    version "2.4.0"
+    resolved "https://registry.npmjs.org/tslib/-/tslib-2.4.0.tgz"
+    integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
+  
   tslib@^1.8.1:
     version "1.14.1"
     resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
     integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
   
-  tslib@^2.0.3:
-    version "2.4.0"
-    resolved "https://registry.npmjs.org/tslib/-/tslib-2.4.0.tgz"
-    integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
+  tslib@^2.3.1:
+    version "2.4.1"
+    resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.1.tgz#0d0bfbaac2880b91e22df0768e55be9753a5b17e"
+    integrity sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==
   
   tsutils@^3.21.0:
     version "3.21.0"
@@ -9270,3 +9497,16 @@ Lockfile:
     version "0.1.0"
     resolved "https://registry.npmjs.org/yocto-queue/-/yocto-queue-0.1.0.tgz"
     integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+  
+  yup@^0.32.11:
+    version "0.32.11"
+    resolved "https://registry.yarnpkg.com/yup/-/yup-0.32.11.tgz#d67fb83eefa4698607982e63f7ca4c5ed3cf18c5"
+    integrity sha512-Z2Fe1bn+eLstG8DRR6FTavGD+MeAwyfmouhHsIUgaADz8jvFKbO/fXc2trJKZg+5EBjh4gGm3iU/t3onKlXHIg==
+    dependencies:
+      "@babel/runtime" "^7.15.4"
+      "@types/lodash" "^4.14.175"
+      lodash "^4.17.21"
+      lodash-es "^4.17.21"
+      nanoclone "^0.2.1"
+      property-expr "^2.0.4"
+      toposort "^2.0.2"

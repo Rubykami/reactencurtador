@@ -1,12 +1,16 @@
 import './Formulario.css'
 import axios from 'axios'
 import { useForm} from 'react-hook-form'
-import { useState} from 'react';
+import { useState, useEffect} from 'react';
 import { HiClipboardDocument } from 'react-icons/hi2'
 import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom';
+import Cookies from 'js-cookie';
 
 
 const Formulario = () => {
+    const navigate = useNavigate();
+
 
     const {register, handleSubmit, formState: { errors }} = useForm();
     const [ ShortenedUrl, SetShortenedUrl] = useState('');
@@ -42,6 +46,7 @@ const Formulario = () => {
     }
 
 
+
     function Clear () {
         SetBaseUrl('')
         SetShortenedUrl('')
@@ -57,6 +62,32 @@ const Formulario = () => {
                 SetShortenedUrl(response.data.ShortenedUrl)})
 
     }
+    
+
+    
+
+    
+    useEffect (() => { 
+        axios.get('http://localhost:3001/api/auth/validate_token', {
+            headers: {
+            'access-token': Cookies.get("access-token"),
+            'client': Cookies.get("client"),
+            'uid': Cookies.get("uid"),
+        }}).then((response) => {
+            console.log("Autenticou")
+        }).catch((response) => {
+            console.log('Não autenticou')
+            navigate('/')
+        })
+    }, []);
+
+    axios.interceptors.response.use( function(config) {
+        if (config.headers['access-token']) {
+            Cookies.set('access-token', config.headers['access-token'])
+        }
+        return config;
+    })
+
 
     return <div className='formulario'>
         <form onSubmit={handleSubmit(onSubmitForm)}>
@@ -110,4 +141,4 @@ const Formulario = () => {
     
 }
 
-export default Formulario
+export default Formulario;
